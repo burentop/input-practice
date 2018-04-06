@@ -3,14 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text.css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
   <title>Input Practice</title>
 </head>
 <body>
   <div class="container">
-    
+    <div class="jumbotron">
+      <h1>Invasive Survey</h1>
+      <p>Help us help you...</p>
+    </div>
+    <div class="form-input well">
+      <form id="survey">
+        <div class="well">
+          <p>Select your favorite food:</p>
+          <select class="form-control" id="food">
+            <option>Tacos</option>
+            <option>Sandwiches</option>
+            <option>Curry</option>
+            <option>Steak</option>
+          </select>
+        </div>
+        <div class="well">
+          <p>Select your favorite TV show:</p>
+          <div class="radio">
+              <label>
+                <input type="radio" name="tv" value="stranger" checked>
+                Stranger Things
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="tv" value="comediens">
+                Comediens in Cars Getting Coffee
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="tv" value="vandal">
+                American Vandal
+              </label>
+            </div>
+        </div>
+        <div class="well">
+          <p>When is your birthday?</p>
+          <div class="form-group">
+              <label for="born">Date of birth:</label>
+              <input id="born" class="form-control" type="date">
+            </div>
+        </div>
+        <div class="well">
+          <div class="form-group">
+              <label for="color">What is your favorite color?</label>
+              <input id="color" class="form-control" type="color">
+            </div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+    <div class="well" id="thanks">
+      <h3>Thank you for your input!!</h3>
+      <p>Your answers were very mediocre!</p>
+    </div>
   </div>
 </body>
 </html>
