@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  $("form .form-input").submit(function(event) {
-    
+  $(".form-input form").submit(function(event) {
+    $(".form-input").toggle();
+    $("#thanks").toggle();
 
     event.preventDefault();
   });
